@@ -83,70 +83,73 @@ html {
 
 /* line 21, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
 body {
+  background-color: #000;
   font-family: sans-serif;
+  color: #D4AF37;
   margin: 0;
   padding: 0; }
-  /* line 26, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+  /* line 28, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
   body.noscript .close-btn, body.noscript .toggle-btn {
     display: none; }
 
-/* line 31, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+/* line 33, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
 header {
   padding: 0 1em;
   position: relative; }
 
-/* line 36, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+/* line 38, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
 .toggle-btn {
   position: absolute;
   right: 1em;
   top: 0; }
 
-/* line 42, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+/* line 44, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
 .navigation ul {
   margin: 0;
   padding: 0; }
-  /* line 44, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+  /* line 46, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
   .navigation ul li {
     list-style-type: none; }
-    /* line 46, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+    /* line 48, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
     .navigation ul li:first-child a {
-      border-top: 1px solid #ccc; }
-    /* line 49, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+      border-top: 1px solid #FFD700; }
+    /* line 51, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
     .navigation ul li a {
       display: block;
       padding: 0.5em 1em;
       text-align: center;
-      border-bottom: 1px solid #ccc;
+      color: #D4AF37;
+      border-bottom: 1px solid #FFD700;
       text-decoration: none; }
 
-/* line 61, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+/* line 64, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
 .toggle-btn, .close-btn {
-  color: #222;
+  color: #D4AF37;
   height: 40px;
   width: 40px; }
-  /* line 65, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+  /* line 68, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
   .toggle-btn span, .close-btn span {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     display: block; }
-  /* line 68, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+  /* line 71, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
   .toggle-btn i, .close-btn i {
-    border: 1px solid #222;
+    border: 1px solid #DAA520;
     padding: 0.5em; }
 
-/* line 74, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+/* line 77, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
 .close-btn {
   margin: 1em; }
 
 @media only screen and (max-width: 60em) {
-  /* line 79, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+  /* line 82, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
   .site-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
     z-index: 100; }
-    /* line 85, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+    /* line 88, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
     .site-wrapper .sliding-canvas {
       width: 100%;
       height: 100%;
@@ -155,16 +158,16 @@ header {
           -ms-transform: translateX(0);
               transform: translateX(0);
       transition: all 300ms ease-in-out; }
-    /* line 93, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+    /* line 96, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] .sliding-canvas {
       -webkit-transform: translateX(-100%);
           -ms-transform: translateX(-100%);
               transform: translateX(-100%); }
-    /* line 97, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+    /* line 100, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] {
       overflow: visible; }
 
-  /* line 103, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+  /* line 106, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
   .slide-menu {
     position: absolute;
     width: 100%;
@@ -175,13 +178,13 @@ header {
     min-height: 600px; }
  }
 
-@media only screen and (min-width: 60em) {
-  /* line 117, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+@media only screen and (min-width: 40em) {
+  /* line 120, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
   .toggle-btn, .close-btn {
     display: none; }
  }
 
-/* line 122, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
+/* line 125, /Users/shelleybabij/Documents/Web/semester 5/exercise-3/scss/components/main */
 body.noscript .slide-menu {
   position: static;
   right: auto; }
