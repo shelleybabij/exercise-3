@@ -26,3 +26,14 @@
   white-space: normal;
   overflow: visible;
 }
+
+@mixin font-skinny{
+  font-family: $font;
+  font-weight: $font-light
+}
+
+@mixin font-medium{
+  font-family: $font;
+  font-weight: $font-regular;
+}
+

@@ -20,7 +20,7 @@ html {
 
 body{
   background-color: $black;
-  font-family: sans-serif;
+  @include font-medium;
   color: $metallic-gold;
   @include zero;
   // Hides close button if there is no js
@@ -45,18 +45,20 @@ header {
   @include zero;
   li{
     list-style-type: none;
-    &:first-child a{
+    /*&:first-child a{
       border-top: 1px solid $gold;
-    }
+    }*/
     a{
+      @include font-medium;
+      background: $gold;
       display:block;
       padding: .5em 1em;
       text-align: center;
-      color: $metallic-gold;
-      border-bottom: 1px solid $gold;
+      color: $black;
+      border-bottom: 1px solid $darker-gold;
       text-decoration: none;
     }
-  } // closes li
+  }// closes li
 }//closes .navigation ul
 
 
@@ -90,7 +92,7 @@ header {
       height:100%;
       position: relative;
       transform: translateX(0);
-      @include ease(all, 300ms, ease-in-out);
+      @include ease(all, 400ms, ease-in-out);
     }//.sliding canvas
 
     &[data-state="slide-open"] .sliding-canvas{
@@ -104,6 +106,7 @@ header {
   }//.site-wrapper
 
   .slide-menu {
+    @include font-medium;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -115,7 +118,7 @@ header {
 
 } // @media
 
-@media only screen and(min-width: 40em){
+@media only screen and(min-width: 60em){
   .toggle-btn,
   .close-btn {
     display: none;
