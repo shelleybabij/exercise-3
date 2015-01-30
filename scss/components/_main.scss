@@ -121,6 +121,7 @@ header {
 
 } // @media
 
+
 @media only screen and(min-width: 40em){
   .toggle-btn,
   .close-btn {
@@ -137,6 +138,7 @@ body.noscript .slide-menu{
   li{
     list-style-type: none;
     display: inline-block;
+    float: right;
     a{
       background-color: $gold;
       border-bottom: 1px solid $gold;
@@ -145,3 +147,19 @@ body.noscript .slide-menu{
 }//closes .navigation ul
 
 }
+
+@media only screen and(min-width: 60em){
+  .navigation ul {
+  li{
+    list-style-type: none;
+    display: inline-block;
+    float:left;
+    a{
+      background-color: $gold;
+      border-bottom: 1px solid $gold;
+    }
+  }// closes li
+}//closes .navigation ul
+
+}
+
